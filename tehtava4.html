@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    </body>
+    <script>
+        const tuotteet = [
+            { nimi: "Kahvi", hinta: 4.5},
+            { nimi: "Tee", hinta: 3},
+            { nimi: "Kaakao", hinta: 3.5},
+        ]
+
+        const nimet = tuotteet.map((x) => x.hinta * 1.1);
+
+        document.write(nimet);
+
+        // b kohta
+        const tTuotteet = tuotteet.filter((x) => x.nimi.startsWith("T"));
+
+        document.write(tTuotteet.map((x) => x.nimi));
+
+        const kalleinhinta = Math.max(...tuotteet.map((x) => x.hinta));
+
+        document.write(kalleinhinta);
+    </script>
+</html>
